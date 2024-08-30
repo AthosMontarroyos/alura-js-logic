@@ -1,6 +1,5 @@
-function gerarNumeroAleatorio(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+var numeroAleatorio = parseInt(Math.random() * 10000 + 1)
 
-const numeroAleatorio = gerarNumeroAleatorio(1, 1000)
+
+
 alert(`o saldo da sua conta é de ${numeroAleatorio}`)

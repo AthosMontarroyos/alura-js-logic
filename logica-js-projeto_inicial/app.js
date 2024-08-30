@@ -1,16 +1,19 @@
 alert('Boas Vindas ao jogo')
-var numero = 22
+var numero = parseInt(Math.random() * 100 + 1)
 let chute = ''
-var tentivas = ''
+var tentivas = '1'
+console.log(`${numero}`)
 while (chute != numero){
-    chute = prompt('escolha um nuemro de 1 e 30')
+    chute = prompt('escolha um numero de 1 e 100')
 if (numero == chute) {
-   alert('Voce acertou o numero secreto')
+   break
 } else {
     if (chute > numero){
-        alert(`Você ERROU :(, mas ${chute} é  MAIOR que o numero certo`)
+        alert(`Você ERROU :(  mas o numero certo é menor que ${chute}`)
     }else if (chute < numero){
-        alert(`Você ERROU mas ${chute} é MENOR que o numero certo`)
+        alert(`Você ERROU :(  mas numero certo é maior que ${chute}`)
     }
 } tentivas ++
-} alert(`vc teve ${tentivas} tentativas`)
+}
+var NomeTentiva = tentivas > 1 ? 'Tentativas' : 'Tentativa'
+alert(`Parabens! você acertou o numero secreto com ${tentivas} ${NomeTentiva}`)
