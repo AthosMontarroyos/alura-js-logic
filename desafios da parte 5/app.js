@@ -5,7 +5,7 @@ let chute = ''
 var tentivas = '1'
 console.log(`${numero}`)
 while (chute != numero){
-    chute = prompt(`escolha um numero de 1 e ${numeromax}`)
+    chute = prompt(`escolha um numero de entre 1 e ${numeromax}`)
 if (numero == chute) {
    break
 } else {
